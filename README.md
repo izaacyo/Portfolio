@@ -12,7 +12,7 @@ Built with:
 
 ## Setup and usage
 
-Live page [here](https://github.com/margittennosaar/markdown_study_materials)
+Live page [here](https://public.bc.fi/s2100144/myPortofolio/index.html)
 
 ## Sources
 
