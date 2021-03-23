@@ -1,0 +1,127 @@
+/**** Tablet support */
+
+@media (max-width: 1024px) {
+  .logo img {
+    left: 20vh;
+  }
+
+  .icons {
+    display: block;
+    position: absolute;
+    width: 30%;
+    top: 6vh;
+  }
+
+  #plans {
+    display: block;
+  }
+
+  #plans .about-box {
+    display: block;
+  }
+
+  #plans img {
+    width: 100%;
+  }
+  footer form {
+    width: 80%;
+    text-align: left;
+  }
+
+  footer form .form-group input,
+  footer form .form-group textarea,
+  footer form button {
+    width: 100%;
+    width: 100%;
+    margin: 0;
+  }
+  #calculator img {
+    width: 410px;
+    margin-right: 4rem;
+  }
+
+  #aboutme img {
+    width: 450px;
+    margin-left: 2.5rem;
+  }
+
+  .calculatortext p,
+  .aboutmetext p {
+    font-size: 20px;
+    max-width: 400px;
+  }
+
+  .kgs a {
+    font-size: 20px;
+  }
+}
+
+/**************** Mobile support ****************/
+
+@media (max-width: 568px) {
+  .logo img {
+    left: 9vh;
+  }
+
+  .boxkg {
+    position: absolute;
+    top: 20rem;
+    right: 20rem;
+  }
+
+  .icons {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 5rem;
+    padding-right: 4rem;
+    left: 25px;
+    width: 18rem;
+  }
+
+  #plans {
+    display: block;
+  }
+
+  #plans img {
+    width: 10%;
+  }
+
+  #plans,
+  #aboutme,
+  #calculator {
+    padding: 1rem;
+  }
+
+  #plans .about-box {
+    display: block;
+  }
+
+  #plans .box {
+    width: 100%;
+  }
+  #calculator img {
+    width: 250px;
+    margin-right: 4rem;
+  }
+
+  #aboutme img {
+    width: 250px;
+    margin-left: 2.5rem;
+  }
+  footer form .form-group {
+    display: block;
+  }
+
+  .calculatortext p,
+  .aboutmetext p {
+    font-size: 15px;
+    max-width: 400px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+
+  .kgs a {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,488 @@
+:root {
+  --font: "Gentium Book Basic", serif;
+  --textColor: rgb(12, 8, 4);
+  --headlineColor: white;
+  --coloredBackground: #ec960c;
+  --plainBackground: rgba(240, 240, 240, 0.753);
+  --darkBackground: rgba(122, 116, 116, 0.644);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--darkBackground);
+}
+
+/* header area */
+
+header {
+  background-color: var(--darkBackground);
+  width: 100%;
+  margin-top: 20px;
+}
+.menu-wrap {
+  position: relative;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.icons {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0);
+  left: 20rem;
+  top: 7rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo img {
+  position: relative;
+  margin-top: 13px;
+  left: 54vh;
+}
+
+#hero-banner {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: url("https://source.unsplash.com/FMQBLyhD2HU/1600x900") no-repeat
+    center center/cover;
+}
+
+#hero-banner::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+}
+
+h1 {
+  font-size: 5rem;
+  color: var(--headlineColor);
+  text-transform: uppercase;
+}
+
+/* Main area */
+h2 {
+  margin: 2rem 0;
+  font-size: 2.5rem;
+  color: var(--textColor);
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+#plans,
+#aboutme,
+#calculator {
+  padding: 50px;
+  min-height: 500px;
+  scroll-margin-top: 5rem;
+}
+
+#plans .about-box {
+  display: flex;
+  justify-content: center;
+}
+
+#plans .box {
+  background-color: (var(--plainBackground));
+  width: 32%;
+  padding: var(--coloredBackground);
+  border-radius: 2px;
+  border: 1px solid var(--coloredBackground);
+}
+
+#plans .box:hover {
+  box-shadow: 0 0 25px var(--coloredBackground);
+}
+
+#plans .box h3 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: var(--coloredBackground);
+}
+
+#plans .box img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  display: block;
+  transition: all 1s ease-out;
+}
+
+.viewmore {
+  font-size: 1.2rem;
+  color: var(--headlineColor);
+}
+
+.container {
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+#aboutme {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 5rem;
+  background-color: var(--coloredBackground);
+}
+
+#calculator {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.kgs a {
+  font-size: 3rem;
+  align-items: center;
+  margin: 1rem;
+  color: var(--coloredBackground);
+}
+#aboutme img {
+  width: 40%;
+  float: left;
+  margin-right: 2rem;
+  padding-right: 3rem;
+}
+
+#calculator img {
+  float: right;
+  margin-left: 2rem;
+  padding-left: 50px;
+}
+
+.aboutmetext p,
+.calculatortext p {
+  font-size: 30px;
+  margin: 1rem;
+  line-height: 1.5;
+  font-size: 30px;
+  padding-top: 5rem;
+}
+
+/****** footer area *****/
+
+footer {
+  background-color: var(--plainBackground);
+  text-align: center;
+  padding: 8px;
+}
+
+footer .copyright {
+  margin-top: 2rem;
+  font-size: 12px;
+}
+
+/***** form ****/
+
+footer form {
+  margin: 0 auto;
+  background-color: var(--coloredBackground);
+  width: 100%;
+  max-width: 800px;
+  border-radius: 5px;
+  padding: 1.5rem;
+}
+
+footer form .form-group {
+  margin: 2rem 0;
+  display: flex;
+}
+
+footer form label {
+  width: 200px;
+  display: block;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+footer form .form-group input,
+footer form .form-group textarea {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: none;
+  width: 70%;
+  font-size: 1rem;
+}
+
+footer form .form-group textarea {
+  min-height: 150px;
+  font-size: 1.4rem;
+}
+
+footer form button {
+  background-color: rgb(243, 243, 243);
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  margin-left: 200px;
+  font-size: inherit;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+.back-to-top {
+  position: absolute;
+  right: 25px;
+  width: 5;
+  border-bottom: 10px solid var(--coloredBackground);
+  border-right: 10px solid var(--coloredBackground);
+  border-left: 10px solid var(--coloredBackground);
+  border-top: 10px solid var(--coloredBackground);
+  transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+  border-bottom: 35px solid var(--coloredBackground);
+}
+
+/* Count Calories */
+
+.kg {
+  background: rgba(159, 218, 48, 0);
+  display: block;
+  height: 130px;
+  width: 235px;
+  right: 50px;
+  bottom: 50px;
+  z-index: 12341234;
+}
+
+.boxkg {
+  background: var(--coloredBackground);
+  display: block;
+  height: 8rem;
+  width: 15rem;
+  margin-top: 26rem;
+  position: absolute;
+  left: 3rem;
+  bottom: 7rem;
+}
+
+.boxkg p {
+  font-size: 30px;
+  position: absolute;
+  bottom: 1vh;
+}
+
+/* Exercises pages */
+h1 {
+  font-size: 60px;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+.lifting-grid,
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    "a a b b c c"
+    "a a d d c c"
+    "e e h h c c"
+    "e e h h i i"
+    "g g f f i i";
+  grid-gap: 1.5rem;
+}
+.gallery-grid,
+.lifting-grid h3 {
+  color: white;
+  text-align: center;
+}
+.grid-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.grid-item-1 {
+  grid-area: a;
+}
+.grid-item-2 {
+  grid-area: b;
+}
+.grid-item-3 {
+  grid-area: c;
+}
+.grid-item-4 {
+  grid-area: d;
+}
+.grid-item-5 {
+  grid-area: e;
+}
+.grid-item-6 {
+  grid-area: f;
+}
+.grid-item-7 {
+  grid-area: g;
+}
+.grid-item-8 {
+  grid-area: h;
+}
+.grid-item-9 {
+  grid-area: i;
+}
+.grid-item-a {
+  grid-area: a;
+}
+.grid-item-b {
+  grid-area: b;
+}
+.grid-item-c {
+  grid-area: c;
+}
+.grid-item-d {
+  grid-area: d;
+}
+.grid-item-e {
+  grid-area: e;
+}
+.grid-item-f {
+  grid-area: f;
+}
+.grid-item-g {
+  grid-area: g;
+}
+.grid-item-h {
+  grid-area: h;
+}
+.grid-item-i {
+  grid-area: i;
+}
+
+/* Animation page */
+.main {
+  height: 100vh;
+  width: 99vw;
+  position: relative;
+  background-color: var(--plainBackground);
+}
+.d1 {
+  position: absolute;
+  background-image: url("https://source.unsplash.com/8OyKWQgBsKQ/1600x900");
+  background-size: 2700px 1500px;
+
+  height: 27vh;
+  width: 15vw;
+
+  background-position: 0 50%;
+
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  animation: dd1 10s 1, dd12 10s 1;
+  animation-delay: 2s, 10s;
+}
+.d2 {
+  position: absolute;
+  background-image: url("https://source.unsplash.com/8OyKWQgBsKQ/1600x900");
+  background-size: 2700px 1500px;
+
+  height: 50vh;
+  width: 25vw;
+
+  background-position: -10vw 50%;
+  left: 10vw;
+
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  animation: dd2 10s 2;
+  animation-delay: 4s;
+}
+.d3 {
+  position: absolute;
+  background-image: url("https://source.unsplash.com/8OyKWQgBsKQ/1600x900");
+  background-size: 2700px 1500px;
+  overflow: hidden;
+
+  height: 100vh;
+  width: 40vw;
+  left: 25vw;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+  background-position: -35vw 50%;
+
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  animation: dd3 10s 2;
+  animation-delay: 4s;
+}
+.d4 {
+  position: absolute;
+  overflow: hidden;
+  background-image: url("https://source.unsplash.com/8OyKWQgBsKQ/1600x900");
+  background-size: 2700px 1500px;
+
+  height: 80vh;
+  width: 25vw;
+  left: 60vw;
+  background-position: -70vw 50%;
+
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  animation: dd4 10s 2;
+  animation-delay: 4s;
+}
+
+@keyframes dd1 {
+  0% {
+  }
+  50% {
+    width: 95vw;
+  }
+}
+@keyframes dd12 {
+  0% {
+  }
+  50% {
+    background-position: Calc(0vw - 40px) 50%;
+  }
+}
+@keyframes dd2 {
+  0% {
+  }
+  50% {
+    background-position: Calc(-10vw - 40px) 50%;
+  }
+}
+@keyframes dd3 {
+  0% {
+  }
+  50% {
+    background-position: Calc(-35vw - 40px) 50%;
+  }
+}
+@keyframes dd4 {
+  0% {
+  }
+  50% {
+    background-position: Calc(-70vw - 40px) 50%;
+  }
+}
