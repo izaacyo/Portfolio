@@ -12,6 +12,8 @@ Built with:
 
 ## Setup and usage
 
+Clone the project and is enough to open it in live server using the HTML .
+
 Live page https://portofoliomariustrainer.netlify.app/
 
 ## Sources
